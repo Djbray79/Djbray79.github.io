@@ -8,3 +8,8 @@ h1 {
 header {
     background-color: slategrey;
 }
+
+.pic_me {
+    float: center; 
+    margin-left:20px;
+}
