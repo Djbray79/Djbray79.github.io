@@ -1,0 +1,66 @@
+/* Target viewport sizes less than 576px */
+
+@media (max-width: 575px) {
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    img {
+      display: outside;
+    }
+  
+  }
+  
+  
+  /* Target viewport sizes 576px and wider */
+  
+  @media (min-width: 576px) {
+    .info {
+      float: left;
+    }
+    .bio {
+      float: left;
+    }
+    footer li {
+      display: inline-block;
+      margin: 0 0.45em;
+    }
+    h2 {
+      margin-bottom: 1.5em;
+    }
+  }
+  
+  /* Target a viewport range wider than 575px and narrower than 992px */
+  
+  @media (min-width: 576px) and (max-width: 991px){
+    .bio {
+      float: left;
+      margin-left: 20px;
+    }
+    h3 {
+      float: left;
+    }
+  
+  }
+  /* Target viewport sizes 768px and wider */
+  
+  @media (min-width: 768px) {
+    .info {
+      float: left;
+      width: 65%;
+    }
+    .bio {
+      float: right;
+      width: 30%;
+    }
+  }
+  
+  /* Target viewport sizes 992px and wider */
+  
+  @media (min-width: 992px) {
+   .bio {
+      float: right;
+    }
+  }
+  

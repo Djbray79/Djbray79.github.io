@@ -3,13 +3,27 @@ h1 {
     color: midnightblue;
     text-align: center;
     margin: 5px;
+    border: 20em;
 }
 
 header {
     background-color: slategrey;
 }
 
-.pic_me {
+.pic-me {
     float: center; 
     margin-left:20px;
 }
+p {
+    max-width: 500px;
+}
+
+.footer {
+    display: float;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
