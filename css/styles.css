@@ -11,22 +11,27 @@ header {
 }
 
 .pic-me {
-    float: center; 
     margin-left:20px;
 }
 p {
     max-width: 500px;
 }
 
-.footer {
-    display: float;
+.body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+.content {
+  flex-grow: 1;
+}
+
+.footer {
+  flex-shrink: 0;
+  
+}
+
   /* Media queries */
 
   /* Target viewport sizes less than 576px */
