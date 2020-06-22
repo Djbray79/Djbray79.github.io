@@ -1,4 +1,5 @@
 
+/*   main CSS     */
 h1 {
     color: midnightblue;
     text-align: center;
@@ -45,6 +46,9 @@ p {
     img {
       display: outside;
     }
+    h3 {
+      flex: left;
+    }
   
   }
   
@@ -53,10 +57,10 @@ p {
   
   @media (min-width: 576px) {
     .info {
-      float: left;
+      flex: left;
     }
     .bio {
-      float: left;
+      flex: right;
     }
     footer li {
       display: inline-block;
@@ -65,29 +69,29 @@ p {
     h2 {
       margin-bottom: 1.5em;
     }
+    .h3bio {
+      flex: right;
+    }
   }
   
   /* Target a viewport range wider than 575px and narrower than 992px */
   
   @media (min-width: 576px) and (max-width: 991px){
     .bio {
-      float: left;
+      flex: left;
       margin-left: 20px;
     }
-    h3 {
-      float: left;
-    }
-  
+
   }
   /* Target viewport sizes 768px and wider */
   
   @media (min-width: 768px) {
     .info {
-      float: left;
+      flex: left;
       width: 65%;
     }
     .bio {
-      float: right;
+      flex: right;
       width: 30%;
     }
   }
@@ -96,7 +100,7 @@ p {
   
   @media (min-width: 992px) {
    .bio {
-      float: right;
+      flex: right;
     }
   }
   

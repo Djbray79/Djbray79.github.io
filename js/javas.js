@@ -1,4 +1,4 @@
-var person = prompt("Welcome to my portfolio, please tell me your name?");
+let person = prompt("Welcome to my portfolio, please tell me your name?");
 
 if (person == null || person == "") {
   txt = "User cancelled the prompt.";
