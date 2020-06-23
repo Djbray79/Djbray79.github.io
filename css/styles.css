@@ -1,5 +1,5 @@
 
-/*   main CSS     */
+/*   main CSS ----------------------------------- */
 h1 {
     color: midnightblue;
     text-align: center;
@@ -18,24 +18,14 @@ p {
     max-width: 500px;
 }
 
-.body {
+body {
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
+  background-color: lightskyblue;
 }
 
-.content {
-  flex-grow: 1;
-}
+  /* Media queries ----------------------------- */
 
-.footer {
-  flex-shrink: 0;
-  
-}
-
-  /* Media queries */
-
-  /* Target viewport sizes less than 576px */
+  /* Target viewport sizes less than 576px ----- */
 
 @media (max-width: 575px) {
 
@@ -43,22 +33,12 @@ p {
       text-align: center;
       margin-bottom: 2.5rem;
     }
-    img {
-      display: outside;
-    }
-
   }
   
-  
-  /* Target viewport sizes 576px and wider */
+  /* Target viewport sizes 576px and wider ---- */
   
   @media (min-width: 576px) {
-    .info {
-      flex: left;
-    }
-    .bio {
-      flex: right;
-    }
+    
     footer li {
       display: inline-block;
       margin: 0 0.45em;
@@ -72,29 +52,22 @@ p {
   
   @media (min-width: 576px) and (max-width: 991px){
     .bio {
-      flex: left;
       margin-left: 20px;
     }
 
   }
-  /* Target viewport sizes 768px and wider */
+  /* Target viewport sizes 768px and wider ------ */
   
   @media (min-width: 768px) {
     .info {
-      flex: left;
       width: 65%;
     }
     .bio {
-      flex: right;
       width: 30%;
     }
   }
   
-  /* Target viewport sizes 992px and wider */
+  /* Target viewport sizes 992px and wider ------- */
   
   @media (min-width: 992px) {
-   .bio {
-      flex: right;
-    }
-  }
   
