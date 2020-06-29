@@ -1,5 +1,10 @@
 
 /*   main CSS ----------------------------------- */
+
+html {
+  height: 100%;
+}
+
 h1 {
     color: midnightblue;
     text-align: center;
@@ -19,9 +24,18 @@ p {
 }
 
 body {
+  display: grid;
   min-height: 100%;
+  grid-template-rows: 1fr auto;
   background-color: lightskyblue;
 }
+
+.footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  margin-bottom: 0px;
+  }
+
 
   /* Media queries ----------------------------- */
 
@@ -55,6 +69,10 @@ body {
       margin-left: 20px;
     }
 
+    .pic-me {
+      grid-row-start: 60;
+    }
+
   }
   /* Target viewport sizes 768px and wider ------ */
   
@@ -71,3 +89,4 @@ body {
   
   @media (min-width: 992px) {
   
+  }
