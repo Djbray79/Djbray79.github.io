@@ -12,12 +12,22 @@ h1 {
     border: 20em;
 }
 
+.bio {
+  grid-area: bio;
+}
+
+.info {
+  grid-area: info;
+}
+
 header {
     background-color: slategrey;
+    grid-area: header;
 }
 
 .pic-me {
     margin-left:20px;
+    grid-area: pic-me;
 }
 p {
     max-width: 500px;
@@ -26,14 +36,20 @@ p {
 body {
   display: grid;
   min-height: 100%;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  grid-template-areas: 
+  "header" 
+  "pic-me"
+  "info"
+  "bio"
+  "footer";
   background-color: lightskyblue;
 }
 
 .footer {
-  grid-row-start: 2;
-  grid-row-end: 3;
-  margin-bottom: 0px;
+  grid-area: footer;
+  -ms-grid-row-align: end;
   }
 
 
