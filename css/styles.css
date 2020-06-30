@@ -12,46 +12,53 @@ h1 {
     border: 20em;
 }
 
-.bio {
-  grid-area: bio;
+header {
+  background-color: slategrey;
+  grid-area: header;
+}
+
+.title {
+  grid-area: title;
+}
+
+.pic-me {
+  margin-left:20px;
+  grid-area: pic-me;
 }
 
 .info {
   grid-area: info;
 }
 
-header {
-    background-color: slategrey;
-    grid-area: header;
+.biot {
+  grid-area: biot;
 }
 
-.pic-me {
-    margin-left:20px;
-    grid-area: pic-me;
+
+.bio {
+  grid-area: bio;
 }
-p {
-    max-width: 500px;
+
+.footer {
+  grid-area: footer;
+  place-content: end;
 }
 
 body {
   display: grid;
   min-height: 100%;
-  grid-template-rows: auto;
-  grid-template-columns: auto;
+  grid-template-rows: 5% 5% 20% 20% 5% 20% 5%;
+  grid-template-columns: 25% 25% 25% 25%;
   grid-template-areas: 
-  "header" 
-  "pic-me"
-  "info"
-  "bio"
-  "footer";
+  "header header header header" 
+  "title title . ."
+  "pic-me pic-me . ."
+  "info info info info"
+  "biot biot biot biot"
+  "bio bio bio bio"
+  "footer footer footer footer";
   background-color: lightskyblue;
 }
-
-.footer {
-  grid-area: footer;
-  -ms-grid-row-align: end;
-  }
-
 
   /* Media queries ----------------------------- */
 
@@ -59,46 +66,23 @@ body {
 
 @media (max-width: 575px) {
 
-    header {
-      text-align: center;
-      margin-bottom: 2.5rem;
-    }
-  }
+}
   
   /* Target viewport sizes 576px and wider ---- */
   
   @media (min-width: 576px) {
     
-    footer li {
-      display: inline-block;
-      margin: 0 0.45em;
-    }
-    h2 {
-      margin-bottom: 1.5em;
-    }
-  }
+  } 
   
   /* Target a viewport range wider than 575px and narrower than 992px */
   
-  @media (min-width: 576px) and (max-width: 991px){
-    .bio {
-      margin-left: 20px;
-    }
-
-    .pic-me {
-      grid-row-start: 60;
-    }
-
+  @media (min-width: 576px) and (max-width: 991px) {
+    
   }
   /* Target viewport sizes 768px and wider ------ */
   
   @media (min-width: 768px) {
-    .info {
-      width: 65%;
-    }
-    .bio {
-      width: 30%;
-    }
+    
   }
   
   /* Target viewport sizes 992px and wider ------- */
