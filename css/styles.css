@@ -20,11 +20,10 @@ header {
 
 .title {
   grid-area: title;
+  margin: 0;
 }
 
 .pic-me {
-  margin-top: 1em;
-  margin-left:2em;
   grid-area: pic-me;
   object-fit: contain;
   width: 100%;
@@ -52,8 +51,10 @@ header {
 body {
   display: grid;
   min-height: 100%;
-  grid-template-rows: 5% 5% 20% 20% 5% 20% 5%;
+  grid-template-rows: 38px 5% 20% 10% 5% 1fr 1fr;
   grid-template-columns: 25% 25% 25% 25%;
+  grid-column-gap: ;
+  grid-row-gap: ;
   grid-template-areas: 
   "header header header header" 
   "title title . ."
