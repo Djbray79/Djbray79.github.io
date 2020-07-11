@@ -1,10 +1,6 @@
 
 /*   main CSS ----------------------------------- */
 
-html {
-  height: 100%;
-}
-
 h1 {
     color: midnightblue;
     text-align: center;
@@ -12,7 +8,7 @@ h1 {
 }
 
 header {
-  background-color: slategrey;
+  background-color: rgb(183, 188, 190);
   border: -1%;
   margin: 0;
   grid-area: header;
@@ -21,6 +17,11 @@ header {
 .title {
   grid-area: title;
   margin: 0;
+}
+
+.button {
+  grid-area: button;
+  margin-top: 5px;
 }
 
 .pic-me {
@@ -50,14 +51,14 @@ header {
 
 body {
   display: grid;
-  min-height: 100%;
-  grid-template-rows: 38px 5% 20% 10% 5% 1fr 1fr;
+  min-height: 100vh;
+  grid-template-rows: 38px 5% 20% 10% 5% 2fr 1fr;
   grid-template-columns: 25% 25% 25% 25%;
   grid-column-gap: ;
   grid-row-gap: ;
   grid-template-areas: 
   "header header header header" 
-  "title title . ."
+  "title title . button"
   "pic-me pic-me . ."
   "info info info info"
   "biot biot biot biot"
