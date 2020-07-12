@@ -1,17 +1,19 @@
 
 /*   main CSS ----------------------------------- */
 
-h1 {
+.head {
+    display: flex;
     color: midnightblue;
-    text-align: center;
-    margin: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
   background-color: rgb(183, 188, 190);
-  border: -1%;
-  margin: 0;
   grid-area: header;
+  margin-top: -5%;
+  margin-left: -5%;
+  margin-right: -5%;
 }
 
 .title {
@@ -22,6 +24,7 @@ header {
 .button {
   grid-area: button;
   margin-top: 5px;
+  width: 75%;
 }
 
 .pic-me {
@@ -52,18 +55,19 @@ header {
 body {
   display: grid;
   min-height: 100vh;
+  max-width: 100vw;
   grid-template-rows: 38px 5% 20% 10% 5% 2fr 1fr;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: ;
   grid-row-gap: ;
   grid-template-areas: 
-  "header header header header" 
-  "title title . button"
-  "pic-me pic-me . ."
-  "info info info info"
-  "biot biot biot biot"
-  "bio bio bio bio"
-  "footer footer footer footer";
+  "header header" 
+  "title button"
+  "pic-me ."
+  "info info"
+  "biot biot"
+  "bio bio"
+  "footer footer";
   background-color: lightskyblue;
 }
 
