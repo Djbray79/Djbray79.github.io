@@ -10,7 +10,7 @@ body {
 main {
   padding: 15px;
   display: grid;
-  grid-template-rows: 10% 20% 10% 5% 2fr;
+  grid-template-rows: .25fr 1.75fr 1fr .25fr 2fr;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: ;
   grid-row-gap: ;
@@ -32,7 +32,7 @@ main {
 
 header {
   background-color: rgb(183, 188, 190);
-  padding: 15px;
+  padding: 5px;
 }
 
 .title {
@@ -43,7 +43,11 @@ header {
 .button {
   grid-area: button;
   margin-top: 5px;
-  width: 75%;
+  width: 75%; 
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  
 }
 
 .pic-me {
@@ -59,6 +63,7 @@ header {
 
 .biot {
   grid-area: biot;
+  margin: 0;
 }
 
 
@@ -67,7 +72,12 @@ header {
 }
 
 .footer {
+  margin: 0;
+  padding: 15px;
+}
 
+.foot {
+  margin: 0;
 }
 
   /* Media queries ---------------------------------------- */
