@@ -9,9 +9,6 @@ function clickMe() {
   } 
 }
 
-let slideIndex = 0;
-showSlides();
-
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
@@ -23,3 +20,6 @@ function showSlides() {
   slides[slideIndex-1].style.display="block";
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
+
+let slideIndex = 0;
+showSlides();
