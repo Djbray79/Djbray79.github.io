@@ -46,12 +46,12 @@ header {
   display: flex;
   justify-content: center;
   margin-left: auto;
-  
 }
 
 img {
-  grid-area: pic-me;
-  height: 100vh;
+  height: 100%;
+  width: auto;
+  grid-area: slide;
 }
 
 .info {
@@ -77,15 +77,6 @@ img {
   margin: 0;
 }
 
-
-
-/* Slideshow container */
-.slideshow-container {
-  overflow: hidden;
-  margin: 0;
-  grid-area: slide;
-}
-
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -101,10 +92,11 @@ img {
   padding: 16px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 10px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  grid-area: slide;
 }
 
 /* Position the "next button" to the right */
