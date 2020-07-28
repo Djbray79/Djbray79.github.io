@@ -8,7 +8,7 @@ body {
 }
 
 main {
-  height: 80vh;
+  height: 95h;
   padding: 15px;
   display: grid;
   grid-template-rows: auto;
@@ -18,7 +18,8 @@ main {
   "slide slide"
   "info info"
   "biot biot"
-  "bio bio";
+  "bio bio"
+  "footer footer";
 }
 
 .head {
@@ -32,6 +33,7 @@ main {
 header {
   background-color: rgb(183, 188, 190);
   padding: 5px;
+  height: 5vh;
 }
 
 .title {
@@ -64,9 +66,9 @@ header {
 }
 
 .footer {
+  grid-area: footer;
   margin: 0;
   padding: 15px 15px 0 15px;
-  position:relative;
   bottom:0;
   left:0;
 }
@@ -151,7 +153,8 @@ button:focus {
       "slide slide"
       "info info"
       "biot biot"
-      "bio bio";
+      "bio bio"
+      "footer footer";
     }
 
     li {
@@ -164,14 +167,14 @@ button:focus {
   
   @media (min-width: 576px) and (max-width: 991px) {
     main {
-      grid-template-rows: .2fr 1.75fr .5fr .2fr 1fr;
+      grid-template-rows: .15fr 1fr .15fr 1.5fr .15fr;
       grid-template-columns: 1.5fr 1fr 1fr;
       grid-template-areas: 
       "title . button"
       "info slide slide"
-      ". slide slide"
       "biot . ."
-      "bio bio .";
+      "bio bio bio"
+      "footer footer footer";
     }
   }
   
@@ -179,13 +182,14 @@ button:focus {
   
   @media (min-width: 992px) {
     main {
-      grid-template-rows: .2fr 1.75fr .5fr .2fr 1fr;
+      grid-template-rows: auto;
       grid-template-columns: 1.5fr 1fr 1fr 1fr;
       grid-template-areas: 
       "title . . button"
-      "info  slide slide slide"
-      ". slide slide slide"
+      "info info info slide"
+      ". . . slide"
       "biot . . ."
-      "bio bio bio .";
+      "bio bio bio bio"
+      "footer footer footer footer";
     }
   }
