@@ -43,12 +43,14 @@ header {
 
 .button {
   grid-area: button;
-  margin-top: 5px;
+  margin-top: 3px;
   margin-bottom: 5px;
   width: 75%; 
   display: flex;
   justify-content: center;
   margin-left: auto;
+  padding: 0;
+  border: 0;
 }
 
 .info {
