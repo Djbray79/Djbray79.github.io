@@ -1,4 +1,4 @@
-function clickMe() {
+function clickMe() { //welcome button
   
   let person = prompt("Welcome to my portfolio, please tell me your name?");
 
@@ -9,12 +9,12 @@ function clickMe() {
   } 
 }
 
-
+//Slideshow controls
 let rotate = setTimeout(showSlides, 10000); // Change image every 10 seconds
 let slideIndex = 0;
 showSlides();
 
-function showSlides() {
+function showSlides() {  
   if ( rotate ) {
     window.clearTimeout(rotate);
   }
