@@ -1,4 +1,5 @@
-function clickMe() { //welcome button
+//welcome button
+function clickMe() {
   
   let person = prompt("Welcome to my portfolio, please tell me your name?");
 
